@@ -1,0 +1,20 @@
+@font-face{
+  font-family: 'Aleo';
+  src: url('../font/Aleo/aleo-regular-webfont.eot') format('eot'),
+        url('../font/Aleo/aleo-regular-webfont.woff') format('woff'),
+        url('../font/Aleo/aleo-regular-webfont.ttf') format('truetype'),
+        url('../font/Aleo/aleo-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;  
+}
+
+.wrapper {
+  max-width: $wrapperWidth;
+  margin: 0 auto;
+  padding: 0 $wrapperPadding;
+}

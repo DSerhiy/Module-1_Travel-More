@@ -1,0 +1,32 @@
+.page-header {
+  height: 80px;
+  background-color: #5474fd;
+  &__wrapper {
+    height: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+  }
+  &__nav-list {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-family: Aleo, serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  &__nav-item {
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+      @include media-width(770px){display: none;}
+    }
+  }
+
+}

@@ -1,0 +1,59 @@
+.card {
+  display: inline-block;
+  text-align: left;
+  max-width: 540px;
+  padding: 50px 25px 50px 30px; 
+  background-color: rgba(35, 35, 35, 0.9);
+  &__subtitle {
+    color: #e8e8e8;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-bottom: 27px;
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+  &__text {
+    color: #e8e8e8;
+    line-height: 26px;
+    margin-bottom: 42px;
+    font-weight: 300;    
+  }  
+}
+
+.card--review {
+  width: auto;
+  max-width: 1100px;
+  background-color: #333333;
+  padding: 0; 
+  display: flex;
+  .card__photo {
+    display: block;
+  }
+  .card__right {
+    padding: 50px 55px 0px 60px;
+  }
+  .card__title {
+    margin-bottom: 35px ;
+  }
+  .card__text{
+    position: relative;
+    text-indent: 1.7rem;
+    margin-bottom: 0;
+    &::before {
+      content: '\f10d';
+      font-family:"Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: 1.2rem; 
+      color: #5474fd;
+      position: absolute;
+      left: -1.7rem;
+      top: -1rem;
+    }
+  }
+}

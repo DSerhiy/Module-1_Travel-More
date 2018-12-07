@@ -1,0 +1,45 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hero_bg.jpg);
+  background-size: cover;
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+  }
+  &__moto {
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    letter-spacing: 5.85px;
+    margin-bottom: 50px;
+  }
+  &__search {
+    margin-bottom: 120px;
+  }
+  &__scroll {
+    display: block;
+    position: relative;
+    font-size: 0.875rem;
+    letter-spacing: 2.5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    &::after {
+      // border: 1px solid black;
+      content: url('../font/icons/icon_arrow-down.png');
+      padding: 10px 50px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: padding 0.3s linear;
+    }
+    &:hover::after {
+      padding-top: 50px;
+    }
+  }
+}

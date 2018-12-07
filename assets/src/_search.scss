@@ -1,0 +1,40 @@
+.search {
+  position: relative;
+  min-width: 650px;
+  @include media-width(670px){min-width: 500px;}
+  &__input {
+    display: block;
+    height: 60px;
+    width: 100%;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #999999;
+    font-size: 0.875rem;
+    letter-spacing: 2.8px;
+    padding-left: 120px;
+    @include media-width(670px){padding-left: 40px;}
+  }
+  &__btn {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 146px;
+    height: 56px;
+    font-family: Aleo, serif;
+    font-size: 0.875rem;
+    letter-spacing: 1.4px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 30px;
+    border: none;
+    background-color: $btnBgColor;
+    cursor: pointer;
+    &:hover {background-color: $btnBgColorHover;}
+    &::after {
+      content: url('../font/icons/icon__search.png');
+      position: absolute;
+      right: 10px;
+    }
+  }
+}

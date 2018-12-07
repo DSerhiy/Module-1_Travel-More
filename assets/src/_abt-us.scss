@@ -1,0 +1,45 @@
+.abt-us {
+  background-image: url('../img/section-1_bg.jpg');
+  background-size: cover; 
+  &__wrapper {
+    display: flex; 
+    justify-content: space-between;
+    @include media-width(990px){justify-content: center;}
+   }
+  &__left,
+  &__right {
+    width: 50%;
+    // border: 3px solid white;
+  }
+  &__left {
+    padding-right: 65px; 
+    padding-top: 200px; 
+    padding-bottom: 130px; 
+    @include media-width(990px){width: 80%;}
+  }
+  &__right {
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+    @include media-width(990px){display: none;}
+  }
+  &__title {
+    font-family: Aleo, serif;
+    font-weight: normal;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+  }
+  &__text {
+    color: #e8e8e8;
+    line-height: 26px;
+    margin-bottom: 27px;
+    font-weight: 300;
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
+  }
+  &__photo:last-of-type {
+    position: relative;
+    left: 125px;
+  }  
+}

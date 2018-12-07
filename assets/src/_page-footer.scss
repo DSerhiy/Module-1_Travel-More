@@ -1,0 +1,18 @@
+.page-footer {
+  padding: 120px 0 55px;
+  background-color: #232323;
+  text-align: center;
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3.36px;
+    margin-bottom: 10px;
+  }
+  &__moto {
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+}

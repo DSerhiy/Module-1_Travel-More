@@ -1,0 +1,15 @@
+.book-section{
+  background-image: url('../img/section-2_bg.jpg');
+  background-size: cover;
+  padding-top: 229px;
+  padding-bottom: 100px;
+  &--altBG{background-image: url('../img/section-3_bg.jpg');}
+  &__wrapper--right {
+    text-align: right;
+  }
+  
+}
+
+
+
+
