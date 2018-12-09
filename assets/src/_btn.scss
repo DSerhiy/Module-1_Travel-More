@@ -11,7 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 1.2px;
   cursor: pointer;
-  &:hover {
+  &:hover, &:focus {
     background-color: $btnBgColorHover;
   }
 }

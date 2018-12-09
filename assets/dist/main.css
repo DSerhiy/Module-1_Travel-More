@@ -33,7 +33,7 @@ body {
   margin-left: 0;
 }
 
-.social__item:hover {
+.social__item:hover, .social__item:focus {
   color: #5474fd;
 }
 
@@ -83,7 +83,7 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: #496bfe;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .card__title {
-  color: #ffffff;
+  color: white;
   font-size: 1.25rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -204,7 +204,7 @@ body {
   cursor: pointer;
 }
 
-.search__btn:hover {
+.search__btn:hover, .search__btn:focus {
   background-color: #496bfe;
 }
 
@@ -235,13 +235,14 @@ body {
 
 .hero__title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4.8px;
 }
 
 .hero__moto {
   font-size: 1.375rem;
+  font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 5.85px;
   margin-bottom: 50px;
@@ -328,6 +329,10 @@ body {
   .page-header__nav-item:first-child {
     display: none;
   }
+}
+
+.page-header__nav-item:hover, .page-header__nav-item:focus {
+  border-bottom: 1px solid white;
 }
 
 .section-features {

@@ -30,7 +30,7 @@
     border: none;
     background-color: $btnBgColor;
     cursor: pointer;
-    &:hover {background-color: $btnBgColorHover;}
+    &:hover, &:focus {background-color: $btnBgColorHover;}
     &::after {
       content: url('../font/icons/icon__search.png');
       position: absolute;

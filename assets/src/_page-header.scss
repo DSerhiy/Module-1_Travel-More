@@ -27,6 +27,6 @@
       margin-left: 0;
       @include media-width(770px){display: none;}
     }
+    &:hover, &:focus {border-bottom: 1px solid white; }
   }
-
 }

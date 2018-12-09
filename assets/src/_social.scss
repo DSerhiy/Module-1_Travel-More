@@ -6,14 +6,16 @@
   &__item {
     margin-left: 25px;
     &:first-child{margin-left:0;}
-    &:hover {color: #5474fd;}
+    &:hover, &:focus {color: #5474fd;}
   }  
-  &__icon::before {font-family:"Font Awesome 5 Brands"; font-style: normal;}
-  &__icon--fb::before {content: '\f39e';}
-  &__icon--tw::before {content: '\f099';}
-  &__icon--in::before {content: '\f0e1';}
-  &__icon--yb::before {content: '\f167';}
-  &__icon--pi::before {content: '\f0d2';}  
+  &__icon {
+    &::before {font-family:"Font Awesome 5 Brands"; font-style: normal;}
+    &--fb::before {content: '\f39e';}
+    &--tw::before {content: '\f099';}
+    &--in::before {content: '\f0e1';}
+    &--yb::before {content: '\f167';}
+    &--pi::before {content: '\f0d2';}
+  }
 }
 
 
